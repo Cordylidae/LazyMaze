@@ -1499,6 +1499,8 @@ MonoBehaviour:
   Wall: {fileID: 5533091959856215060, guid: b648bbef78d2f7e40bd0e5659825cdc7, type: 3}
   playerPosition: {fileID: 1584280390}
   cameraDistancingArea: {fileID: 0}
+  asyncSceneLoader: {fileID: 0}
+  exitObject: {fileID: 0}
   scoreFormulsObject: {fileID: 0}
   listOfScoreObjects:
   - {fileID: 5912949938568281854, guid: 5744845a25d329547adbb0d3750d01f6, type: 3}
@@ -1663,7 +1665,7 @@ MonoBehaviour:
   moveReal: 50
   cofficientOfRun: 1.9
   revolutionSpeed: 10
-  joystick: {fileID: 5775266699801374504, guid: 769cd2a1dfea4264b9f1acdfcda7efbc, type: 3}
+  joystick: {fileID: 1901014998}
   playerSprite: {fileID: 245866558}
 --- !u!4 &1584280390
 Transform:
@@ -1925,7 +1927,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 587034894402422100}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c42a163f0fc81c2458c401c80f7f04e8, type: 3}
+  m_Script: {fileID: 11500000, guid: 78b6febaed131ea4fa0d3388c2ae8304, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1971390765

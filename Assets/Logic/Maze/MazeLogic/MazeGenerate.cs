@@ -96,23 +96,7 @@ namespace Logic.Maze.MazeLogic
 				}
 			}
 
-
-
-
-
-			if (cameraDistancingArea != null) PlaineCenter(10, 10, 19, 21);
-			else Debug.Log("Without Qwests");
-
-
-			if (scoreFormulsObject != null)
-			{
-				AddScoreObjects();
-				if (saveObject != null) AddSaveArea();
-				else Debug.Log("Without Save");
-			}
-			else Debug.Log("Without Score");
-
-			AddExitArea();
+			CheckMazeObject();
 
 			GenerateMaze();
 
@@ -131,6 +115,29 @@ namespace Logic.Maze.MazeLogic
 		}
 
 		#region /// Block Add Trigger Objects in Maze
+
+		void CheckMazeObject()
+		{
+			if (cameraDistancingArea != null)
+			{
+				PlaineCenter(10, 10, 19, 21);
+			}
+			else Debug.Log("Without Qwests");
+
+			if (scoreFormulsObject != null)
+			{
+				AddScoreObjects();
+				if (saveObject != null) AddSaveArea();
+				else Debug.Log("Without Save");
+			}
+			else Debug.Log("Without Score");
+
+			if (exitObject != null)
+			{
+				AddExitArea();
+			}
+			else Debug.Log("Without Exit");
+		}
 
 		void AddSaveArea()
 		{
